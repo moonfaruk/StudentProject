@@ -32,7 +32,7 @@
 					<td><?php echo $value->student_phone;?></td>
                                         <td>
                                             <a href="<?php echo base_url();?>index.php/students/update_student/<?php echo $value->id?>">Edit</a> |
-                                            <a href="#">Delete</a>
+                                            <a href="<?php echo base_url();?>index.php/students/delete/<?php echo $value->id;?>">Delete</a>
                                         </td>
 				</tr>
 				<?php }?>

@@ -50,5 +50,11 @@
                         
                         redirect('students/view_data');
                 }
+                
+                public function delete($id){
+                   
+                    $this->common_model->change_status('tbl_student', $id);
+                    redirect('students/view_data');
+                }
 	}
 ?>

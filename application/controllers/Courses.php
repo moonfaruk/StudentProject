@@ -55,5 +55,11 @@
             $data['course_info'] = $this->common_model->selectAll('tbl_course');
             $this->load->view('course/view_courses', $data);
         }
+        
+        public function delete($id){
+            
+            $this->common_model->change_status('tbl_course', $id);
+            redirect('courses/index');
+        }
     }
 ?>
